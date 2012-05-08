@@ -38,6 +38,8 @@ public class FragmentTabsPager extends SherlockFragmentActivity {
 
         mTabsAdapter.addTab("simple", "Simple", 
                 FragmentStackSupport.CountingFragment.class, null);
+        mTabsAdapter.addTab("accounts", "Accounts",
+                AccountListActivity.AccountListFragment.class, null);
         mTabsAdapter.addTab("contacts", "Contacts",
             LoaderCursorSupport.CursorLoaderListFragment.class, null);
         mTabsAdapter.addTab("custom", "Custom",
